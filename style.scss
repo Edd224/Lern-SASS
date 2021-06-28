@@ -1,0 +1,52 @@
+
+@import "variables";
+@import "mixins";
+
+
+
+
+
+body
+{
+    background: $secundary-color;
+}
+
+.alert-button
+{
+    @include myButton;
+    padding: 5px 10px;
+}
+
+.bigger-button
+{
+    @include myButton;
+    padding: 25px 25px;
+}
+
+
+p
+{
+    @include textStyle;
+    font-size: 18px;
+}
+
+h1
+{
+    @include textStyle;
+    font-size: 35px;
+}
+
+
+h2
+{
+    @include big-text;
+}
+
+img
+{
+    @include image;
+    @include rounded(8px);
+
+}
+
+@include our-links;// vseobecna mixina

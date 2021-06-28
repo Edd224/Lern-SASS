@@ -1,0 +1,67 @@
+@mixin rounded($radius){
+    border-radius: $radius;// mixina s argumentom
+
+    
+}
+
+
+
+
+
+
+@mixin myButton 
+{
+    background: rgb(255, 68, 0);
+    color: #fff;
+    @include rounded(15px);
+}
+
+@mixin textStyle 
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    color: rgb(153, 4, 4);
+    text-align: left
+}
+
+@mixin big-text {
+
+    // font-size: 45px;
+    // font-weight: bold;
+    // font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    // Trosku lepsi zapis , ke sa opakuje slovo FONT /
+
+    font: {
+        size: 45px;
+        weight: bold;
+        family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    color: rgb(66, 31, 138);
+       
+
+    
+}
+
+
+@mixin image 
+{
+    width: 400px;
+    
+
+
+}
+    
+
+
+
+@mixin our-links {
+    a{
+        font-style: italic;
+        text-decoration: none;
+        color: $ternary-color;
+    }
+    
+}
+
+    
