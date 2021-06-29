@@ -1,5 +1,5 @@
 body {
-  background: #9c891c;
+  background: #dceb08;
 }
 
 .alert-button {
@@ -7,6 +7,7 @@ body {
   color: #fff;
   border-radius: 15px;
   padding: 5px 10px;
+  box-shadow: 20px 10px 15px #006d00, 30px 30px 32px #1310ce;
 }
 
 .bigger-button {
@@ -14,6 +15,7 @@ body {
   color: #fff;
   border-radius: 15px;
   padding: 25px 25px;
+  box-shadow: 20px 10px 15px #4d4206, 30px 30px 50px #ff00c8;
 }
 
 p {
@@ -35,15 +37,28 @@ h2 {
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #421f8a;
+  text-shadow: 5px 5px 8px rgba(255, 255, 255, 0.734);
 }
 
 img {
   width: 400px;
-  border-radius: 8px;
+  border-radius: 15px;
+  box-shadow: 20px 10px 35px 5px #1b064d, 30px 30px 50px #ff00c8;
 }
 
 a {
   font-style: italic;
   text-decoration: none;
-  color: #e5ff00;
+  color: #001aff;
+}
+
+a {
+  color: #218b0c;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+a:hover {
+  color: blue;
+  font-size: 23px;
 }

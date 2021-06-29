@@ -1,6 +1,6 @@
 
-@import "variables";
-@import "mixins";
+@import "Partials/variables";
+@import "Partials/mixins";
 
 
 
@@ -15,12 +15,16 @@ body
 {
     @include myButton;
     padding: 5px 10px;
+    @include shadow(20px 10px 15px rgb(0, 109, 0), 30px 30px 32px rgb(19, 16, 206));
+
 }
 
 .bigger-button
 {
     @include myButton;
     padding: 25px 25px;
+    @include shadow(20px 10px 15px rgb(77, 66, 6), 30px 30px 50px rgb(255, 0, 200));
+
 }
 
 
@@ -40,13 +44,54 @@ h1
 h2
 {
     @include big-text;
+    @include shadowText(5px 5px 8px rgba(255, 255, 255, 0.734))
 }
 
 img
 {
     @include image;
-    @include rounded(8px);
+    @include rounded(15px);
+    @include shadow(20px 10px 35px 5px rgb(27, 6, 77), 30px 30px 50px rgb(255, 0, 200));
+
 
 }
 
 @include our-links;// vseobecna mixina
+
+
+
+// Nesting ( vsadenie ) // // ** Proste sa to pise dokopy nie zvlast **//
+
+
+// .first-list
+// {
+//     font-size: 23px;
+
+//     li 
+//     {
+//         color: blue;
+//     }
+
+//     a 
+//     {
+//         text-decoration: none;
+//     }
+
+
+// }
+
+
+
+a 
+{
+    color: rgb(33, 139, 12);
+    text-decoration: none;
+    font-size: 20px;
+
+
+    &:hover 
+    {
+        color: blue;
+        font-size: 23px;
+    }
+}

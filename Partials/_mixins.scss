@@ -1,4 +1,4 @@
-@mixin rounded($radius){
+@mixin rounded($radius:35px){// v zatvorke je vychozia(defaultna) hodnata ak bz sa zabulo ju dat o mixinu
     border-radius: $radius;// mixina s argumentom
 
     
@@ -64,4 +64,14 @@
     
 }
 
+    
+@mixin shadow($shadow...) //tie 3 bodky su na pridavanie viacero hodnot o jedneho argumentu ( staci ciarka za napr.10px 10px 10px red, 15px 15px 15px blue) Tomuto zapisu sa hovori VARARG
+{
+    box-shadow: $shadow;
+}
+
+@mixin shadowText($shadowText) {
+    text-shadow: $shadowText;
+    
+}
     
