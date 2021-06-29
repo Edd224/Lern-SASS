@@ -1,6 +1,7 @@
 
 @import "Partials/variables";
 @import "Partials/mixins";
+@import "Partials/functions";
 
 
 
@@ -9,12 +10,13 @@
 body
 {
     background: $secundary-color;
+    font-size: 16px
 }
 
 .alert-button
 {
     @include myButton;
-    padding: 5px 10px;
+    padding: em(5px) em(10px);
     @include shadow(20px 10px 15px rgb(0, 109, 0), 30px 30px 32px rgb(19, 16, 206));
 
 }
@@ -22,8 +24,10 @@ body
 .bigger-button
 {
     @include myButton;
-    padding: 25px 25px;
+    padding: em(10px) em(25px);
     @include shadow(20px 10px 15px rgb(77, 66, 6), 30px 30px 50px rgb(255, 0, 200));
+
+    font-size: 1em
 
 }
 
@@ -31,13 +35,14 @@ body
 p
 {
     @include textStyle;
-    font-size: 18px;
+    font-size: em(18px);
+    padding: em(20px)
 }
 
 h1
 {
     @include textStyle;
-    font-size: 35px;
+    font-size: em(35px);
 }
 
 
@@ -50,7 +55,7 @@ h2
 img
 {
     @include image;
-    @include rounded(15px);
+    @include rounded(em(15px));
     @include shadow(20px 10px 35px 5px rgb(27, 6, 77), 30px 30px 50px rgb(255, 0, 200));
 
 
@@ -84,14 +89,40 @@ img
 
 a 
 {
-    color: rgb(33, 139, 12);
+    color: $ternary-color;
     text-decoration: none;
-    font-size: 20px;
+    font-size: em(20px);
 
 
     &:hover 
     {
-        color: blue;
-        font-size: 23px;
+      // *** Funkcie *** //
+      color: lighten($color: $ternary-color, $amount: 40%);
     }
+
+    // darken a lighten = stmavenie a zosvetlenie farieb ( ** FUNKCIE** )
 }
+
+
+
+// ** Funkcia rozsirenia @extend ** //
+
+.normalNotifikation 
+{
+    color: white;
+    font-size: em(20px);
+    background: $main-color;
+    width: em(220px);
+    text-align: center;
+}
+
+.errorNotifikation
+{
+    @extend .normalNotifikation;
+    border: em(2px) solid blue;
+    padding: 2px;
+
+
+}
+
+

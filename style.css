@@ -1,12 +1,13 @@
 body {
   background: #dceb08;
+  font-size: 16px;
 }
 
 .alert-button {
   background: #ff4400;
   color: #fff;
   border-radius: 15px;
-  padding: 5px 10px;
+  padding: 0.3125em 0.625em;
   box-shadow: 20px 10px 15px #006d00, 30px 30px 32px #1310ce;
 }
 
@@ -14,22 +15,24 @@ body {
   background: #ff4400;
   color: #fff;
   border-radius: 15px;
-  padding: 25px 25px;
+  padding: 0.625em 1.5625em;
   box-shadow: 20px 10px 15px #4d4206, 30px 30px 50px #ff00c8;
+  font-size: 1em;
 }
 
 p {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: #990404;
-  text-align: left;
-  font-size: 18px;
+  text-align: center;
+  font-size: 1.125em;
+  padding: 1.25em;
 }
 
 h1 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: #990404;
-  text-align: left;
-  font-size: 35px;
+  text-align: center;
+  font-size: 2.1875em;
 }
 
 h2 {
@@ -42,23 +45,35 @@ h2 {
 
 img {
   width: 400px;
-  border-radius: 15px;
+  border-radius: 0.9375em;
   box-shadow: 20px 10px 35px 5px #1b064d, 30px 30px 50px #ff00c8;
 }
 
 a {
   font-style: italic;
   text-decoration: none;
-  color: #001aff;
+  color: #8c97fc;
 }
 
 a {
-  color: #218b0c;
+  color: #8c97fc;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.25em;
 }
 
 a:hover {
-  color: blue;
-  font-size: 23px;
+  color: white;
+}
+
+.normalNotifikation, .errorNotifikation {
+  color: white;
+  font-size: 1.25em;
+  background: #ac0909;
+  width: 13.75em;
+  text-align: center;
+}
+
+.errorNotifikation {
+  border: 0.125em solid blue;
+  padding: 2px;
 }
