@@ -1,6 +1,9 @@
 body {
+  width: 63.125em;
   background: #dceb08;
-  font-size: 16px;
+}
+body h1, body h2, body p {
+  color: black;
 }
 
 .alert-button {
@@ -40,7 +43,7 @@ h2 {
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #421f8a;
-  text-shadow: 5px 5px 8px rgba(255, 255, 255, 0.734);
+  text-decoration: underline;
 }
 
 img {

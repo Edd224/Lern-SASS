@@ -7,10 +7,66 @@
 
 
 
+$fontSize: big; // ** Premenna podmienok  ** ///
+
+
+// font size moze mat hodnoty : small, normal a big
+
 body
 {
+    width: em(1010px);
     background: $secundary-color;
-    font-size: 16px
+
+
+// // Pokial je splnena ( if ) podmienka small == small ,tak font size 20px
+
+//     @if $fontSize == small   
+//     {
+//         font-size: 20px;
+//     }
+// // Pokial nieje splnena podmienka ( else ) tak font size 12px //
+//     @else 
+//     {
+//         font-size: 12px;
+//     }
+
+
+
+
+//     @if $fontSize == small   
+//     {
+//         font-size: 12px;
+//     // Sem mozno zadavat cokolvek a upravi sa viac veci naraz
+//     }
+
+
+//     @else if $fontSize == normal
+//     {
+//         font-size: 16px;
+//     // Sem mozno zadavat cokolvek a upravi sa viac veci naraz
+//     }
+
+
+//     @else if $fontSize == big
+//     {
+//         font-size: 20px;
+//     // Sem mozno zadavat cokolvek a upravi sa viac veci naraz
+
+//     }
+   
+
+h1, h2, p 
+{
+    color: $textColor;
+}
+
+       
+
+
+
+
+
+
 }
 
 .alert-button
@@ -49,7 +105,12 @@ h1
 h2
 {
     @include big-text;
-    @include shadowText(5px 5px 8px rgba(255, 255, 255, 0.734))
+
+
+    @include pizza
+    {
+        text-decoration: underline;
+    }
 }
 
 img
@@ -94,6 +155,17 @@ a
     font-size: em(20px);
 
 
+
+    @include coffee{
+        color: rgb(121, 72, 17);
+    }
+
+
+
+
+
+
+
     &:hover 
     {
       // *** Funkcie *** //
@@ -125,4 +197,16 @@ a
 
 }
 
+
+
+
+
+
+
+
+
+.result
+{
+    font-size: $mathResults;
+}
 

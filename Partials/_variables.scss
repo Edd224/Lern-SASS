@@ -1,7 +1,18 @@
+
+// Theme: light, Dark
+
+$theme: normal;  //dark,a light
+
+
+
+
+
+
 // --COLORS--//
 $main-color: rgb(172, 9, 9);
 $secundary-color: rgb(220, 235, 8);
 $ternary-color:rgb(140, 151, 252);
+$textColor:  black;
 
 
 // -- SIZES-- //
@@ -10,3 +21,34 @@ $footer-height: 220px;
 
 // --FONTS--//
 $font-size: 35px;
+
+
+
+
+@if $theme == dark
+{
+    $secundary-color: #111;
+    $textColor: #fff
+}
+@else if $theme == light
+{
+    $secundary-color: #fff
+}
+
+
+
+
+// Znacka(brand): pizza, coffee
+//Pizza bude chciet pociarknute nadpisy
+//Kaviaren bude chciet inu hnedu farbu odkazu
+
+$brand: pizza;
+
+
+
+
+
+
+
+
+$mathResults: 5px * 3;

@@ -16,12 +16,36 @@
     @include rounded(15px);
 }
 
+
+
+
+
+@mixin pizza {
+    @if $brand == pizza{
+        @content;
+    }
+}
+
+
+@mixin coffee {
+    @if $brand == coffee{
+        @content;
+    }
+    
+}
+
+
+
+
+
+
+
 @mixin textStyle 
 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
     color: rgb(153, 4, 4);
-    text-align: center;
+    text-align: left;
 }
 
 @mixin big-text {

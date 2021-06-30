@@ -1,6 +1,10 @@
 body {
+  width: 63.125em;
   background: #dceb08;
-  font-size: 16px;
+}
+
+body h1, body h2, body p {
+  color: black;
 }
 
 .alert-button {
@@ -23,7 +27,7 @@ body {
 p {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: #990404;
-  text-align: center;
+  text-align: left;
   font-size: 1.125em;
   padding: 1.25em;
 }
@@ -31,7 +35,7 @@ p {
 h1 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: #990404;
-  text-align: center;
+  text-align: left;
   font-size: 2.1875em;
 }
 
@@ -40,7 +44,7 @@ h2 {
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #421f8a;
-  text-shadow: 5px 5px 8px rgba(255, 255, 255, 0.734);
+  text-decoration: underline;
 }
 
 img {
@@ -76,4 +80,8 @@ a:hover {
 .errorNotifikation {
   border: 0.125em solid blue;
   padding: 2px;
+}
+
+.result {
+  font-size: 15px;
 }
