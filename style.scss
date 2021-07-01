@@ -193,8 +193,6 @@ a
     @extend .normalNotifikation;
     border: em(2px) solid blue;
     padding: 2px;
-
-
 }
 
 
@@ -205,8 +203,52 @@ a
 
 
 
-.result
-{
-    font-size: $mathResults;
+
+
+
+
+
+
+// == CYKLY == //
+
+
+
+// Cyklus ( @for ) navysenie o *5em premennej ( $i ) //
+
+
+// @for $i from 1 through 6 {
+//     .col-#{$i} {
+//         width: $i * 5em;
+//     }
+// }
+
+
+
+
+// == each cyklus == //
+
+// list
+
+$student: david, herry, ron, ed;
+
+@each $oneStudent in $student {
+    .#{$oneStudent}-profile {
+        background-image: url("img/#{$oneStudent}.png");
+    }
+    
 }
 
+
+
+// == Map == // // Tiez cyclus  == ( @EACH ) == 
+
+$font-size: (veru-small: 7px, small: 10px, medium: 15px, large: 20px);
+
+
+@each $name, $size in $font-size {
+    .#{$name} {
+        font-size: $size;
+    }
+
+    
+}

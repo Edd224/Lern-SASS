@@ -79,3 +79,35 @@ a:hover {
   border: 0.125em solid blue;
   padding: 2px;
 }
+
+.david-profile {
+  background-image: url("img/david.png");
+}
+
+.herry-profile {
+  background-image: url("img/herry.png");
+}
+
+.ron-profile {
+  background-image: url("img/ron.png");
+}
+
+.ed-profile {
+  background-image: url("img/ed.png");
+}
+
+.veru-small {
+  font-size: 7px;
+}
+
+.small {
+  font-size: 10px;
+}
+
+.medium {
+  font-size: 15px;
+}
+
+.large {
+  font-size: 20px;
+}
