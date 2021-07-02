@@ -252,3 +252,20 @@ $font-size: (veru-small: 7px, small: 10px, medium: 15px, large: 20px);
 
     
 }
+
+
+
+
+
+// === While cyklus === //
+
+
+$j: 1;
+@while $j <= 4 {
+    .picture-#{$j} {
+        width: $j * 10%;
+    }
+    $j: $j + 1;
+}
+
+
